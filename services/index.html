@@ -714,59 +714,31 @@ aside#custom_html-4 {
   }
   .site-logo {
     position: absolute;
-    background-color: transparent;
+    background-color: #fff;
     z-index: 9;
     top: 0;
-    left: 0;
-    margin: 0;
-    padding: 0;
-  }
-  .site-logo a {
-    display: block;
-    margin: 0;
-    padding: 0;
-    line-height: 0;
-  }
-  .site-logo {
-    top: 22px !important;
-  }
-  .site-logo img {
-    max-width: 180px;
-    height: auto;
-    margin: 0;
-    padding: 0;
-    vertical-align: top;
-    border: none;
-    outline: none;
-    display: block;
-  }
-  .header-image.is-logo-image {
-    margin: 0 !important;
-    padding: 0 !important;
-    display: block !important;
-    vertical-align: top !important;
-    object-fit: contain;
-    object-position: top left;
+    padding: 28px 0;
+    -webkit-box-shadow: 55px -30px 52px -18px rgb(0 0 0 / 83%);
+    box-shadow: 55px -30px 52px -18px rgb(0 0 0 / 83%);
   }
   .site-logo::before {
-    content: "";
-    background-color: transparent;
+    content: " ";
+    background-color: #fff;
     position: absolute;
-    height: 100%;
-    width: 100vw;
-    right: 100%;
-    top: 0;
+    height: 92px;
+    width: 100%;
+    left: -100%;
   }
   .site-logo::after {
+    border-left: 0 solid currentColor;
+    border-right: 60px solid transparent;
+    border-top: 120px solid #fff;
     content: "";
+    height: 0;
     position: absolute;
     right: -60px;
     top: 0;
     width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 80px 0 0 60px;
-    border-color: transparent transparent transparent transparent;
   }
 }
 
@@ -1009,7 +981,7 @@ nav#site-navigation #primary-menu .menu-item.current_page_item > a,
 </div></aside>			</div>
 			<div  class="site-logo">
 					<a href="../index.html" rel="home">
-						<img class="header-image is-logo-image" alt="Advance Mining Solutions" src="../assets/ams-logo-main.jpg" />
+						<img class="header-image is-logo-image" alt="Advance Mining Solutions" src="../assets/logo-canva-design.png" />
 					</a>
 				</div>			</div>
 		</header>
