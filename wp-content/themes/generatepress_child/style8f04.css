@@ -8,3 +8,185 @@
  Version:      0.1
 */
 
+/* ===== Advance Mining Solutions Brand Overrides ===== */
+/* Light Blue #00A0DC (RGB 0,160,220) - per client brand guidelines */
+
+:root {
+  --primary-blue: #00A0DC !important;
+  --secondary-blue: #00A0DC !important;
+}
+
+/* Override YWRAQ button colors */
+:root {
+  --ywraq_layout_button_bg_color: rgb(0, 160, 220) !important;
+  --ywraq_layout_button_bg_color_hover: rgba(0, 160, 220, 0.78) !important;
+  --ywraq_layout_button_border_color: rgb(0, 160, 220) !important;
+  --ywraq_layout_button_border_color_hover: rgba(0, 160, 220, 0.78) !important;
+  --ywraq_checkout_button_bg_color: rgb(0, 160, 220) !important;
+  --ywraq_checkout_button_bg_color_hover: rgba(0, 160, 220, 0.78) !important;
+  --ywraq_checkout_button_border_color: rgb(0, 160, 220) !important;
+  --ywraq_checkout_button_border_color_hover: rgba(0, 160, 220, 0.78) !important;
+  --ywraq_accept_button_bg_color: rgb(0, 160, 220) !important;
+  --ywraq_accept_button_bg_color_hover: rgba(0, 160, 220, 0.78) !important;
+  --ywraq_accept_button_border_color: rgb(0, 160, 220) !important;
+  --ywraq_accept_button_border_color_hover: rgba(0, 160, 220, 0.78) !important;
+}
+
+/* Brand blue helpers (avoid gradients; exact #00A0DC only) */
+.brand-blue-bg {
+  background: #00A0DC !important;
+}
+
+.brand-blue-text {
+  color: #00A0DC !important;
+}
+
+/* Buttons / CTAs that should use the brand blue */
+.vc_btn3.vc_btn3-style-custom,
+.gform_button,
+.woocommerce a.button,
+.woocommerce button.button,
+.woocommerce input.button,
+.woocommerce a.add-request-quote-button.button,
+.wp-block-post.product a.add-request-quote-button.button,
+a.add-request-quote-button.button {
+  background: #00A0DC !important;
+}
+
+/* Terms & Conditions section - Black background on all pages */
+.site-info,
+.site-info .inside-site-info,
+.site-info .grid-container,
+.site-info .inside-site-info.grid-container {
+  background: #000000 !important;
+}
+
+/* Navigation hover/active - Light Blue */
+.main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+.main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+.main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+.main-navigation .main-nav ul li[class*="current-menu-"]>a,
+.main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+.main-navigation .main-nav ul ul li[class*="current-menu-"]>a,
+.navigation-search input[type="search"]:active,
+.navigation-search input[type="search"]:focus {
+  background-color: #00A0DC !important;
+}
+
+/* Title underline accent */
+.tit-green::after,
+.tit-green-center::after {
+  background: rgba(0, 160, 220, 0.83) !important;
+}
+
+/* ===== Client Font Requirement - PastelHeart ===== */
+/*
+ * The client requires the PastelHeart font to be used
+ * consistently across all pages. Place the provided font
+ * files in: wp-content/themes/generatepress_child/fonts/
+ * with the following filenames (you may rename the actual
+ * files to match this convention):
+ *   - PastelHeart-Regular.woff2
+ *   - PastelHeart-Regular.woff
+ */
+
+@font-face {
+  font-family: 'PastelHeart';
+  src: url('./fonts/PastelHeart.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Global typography override - apply PastelHeart everywhere */
+body,
+button,
+input,
+select,
+textarea,
+.site-title,
+.site-description,
+.main-navigation a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.entry-title,
+.widget-title,
+.woocommerce a.button,
+.woocommerce button.button,
+.woocommerce input.button,
+.woocommerce a.add-request-quote-button.button,
+.wp-block-post.product a.add-request-quote-button.button,
+a.add-request-quote-button.button {
+  font-family: 'PastelHeart', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+}
+
+/* Absolute catch-all so every text node uses PastelHeart,
+   even if a plugin or inline style sets a different font-family. */
+html,
+body * {
+  font-family: 'PastelHeart', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+}
+
+/* FIX: Exclude FontAwesome and other icon fonts from the global PastelHeart override */
+.fa,
+.fas,
+.fab,
+.far,
+.fal,
+.fad,
+[class*="fa-"],
+[class*="icon-"],
+.vc_icon_element-icon {
+  font-family: FontAwesome !important;
+}
+
+/* ===== Visibility Improvements ===== */
+/* Increase base font size for better readability of the script font */
+html,
+body {
+  font-size: 20px !important;
+  line-height: 1.5 !important;
+}
+
+/* Scale headings appropriately */
+h1 {
+  font-size: 2.5em !important;
+}
+
+h2 {
+  font-size: 2.2em !important;
+}
+
+h3 {
+  font-size: 1.9em !important;
+}
+
+h4 {
+  font-size: 1.6em !important;
+}
+
+h5,
+.widget-title {
+  font-size: 1.4em !important;
+}
+
+h6 {
+  font-size: 1.2em !important;
+}
+
+/* Ensure navigation is readable */
+.main-navigation a {
+  font-size: 1.1em !important;
+  font-weight: 500 !important;
+}
+
+/* Ensure buttons are readable */
+button,
+.button,
+input[type="submit"] {
+  font-size: 1.1em !important;
+}
