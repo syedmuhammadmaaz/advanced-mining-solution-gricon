@@ -8,3 +8,75 @@
  Version:      0.1
 */
 
+/* ===== Advance Mining Solutions Brand Overrides ===== */
+/* Light Blue #00A0DC (RGB 0,160,220) - per client brand guidelines */
+
+:root {
+  --primary-blue: #00A0DC !important;
+  --secondary-blue: #00A0DC !important;
+}
+
+/* Override YWRAQ button colors */
+:root {
+  --ywraq_layout_button_bg_color: rgb(0, 160, 220) !important;
+  --ywraq_layout_button_bg_color_hover: rgba(0, 160, 220, 0.78) !important;
+  --ywraq_layout_button_border_color: rgb(0, 160, 220) !important;
+  --ywraq_layout_button_border_color_hover: rgba(0, 160, 220, 0.78) !important;
+  --ywraq_checkout_button_bg_color: rgb(0, 160, 220) !important;
+  --ywraq_checkout_button_bg_color_hover: rgba(0, 160, 220, 0.78) !important;
+  --ywraq_checkout_button_border_color: rgb(0, 160, 220) !important;
+  --ywraq_checkout_button_border_color_hover: rgba(0, 160, 220, 0.78) !important;
+  --ywraq_accept_button_bg_color: rgb(0, 160, 220) !important;
+  --ywraq_accept_button_bg_color_hover: rgba(0, 160, 220, 0.78) !important;
+  --ywraq_accept_button_border_color: rgb(0, 160, 220) !important;
+  --ywraq_accept_button_border_color_hover: rgba(0, 160, 220, 0.78) !important;
+}
+
+/* Brand blue helpers (avoid gradients; exact #00A0DC only) */
+.brand-blue-bg {
+  background: #00A0DC !important;
+}
+
+.brand-blue-text {
+  color: #00A0DC !important;
+}
+
+/* Buttons / CTAs that should use the brand blue */
+.vc_btn3.vc_btn3-style-custom,
+.gform_button,
+.woocommerce a.button,
+.woocommerce button.button,
+.woocommerce input.button,
+.woocommerce a.add-request-quote-button.button,
+.wp-block-post.product a.add-request-quote-button.button,
+a.add-request-quote-button.button {
+  background: #00A0DC !important;
+}
+
+/* Terms & Conditions section - Black background on all pages */
+.site-info,
+.site-info .inside-site-info,
+.site-info .grid-container,
+.site-info .inside-site-info.grid-container {
+  background: #000000 !important;
+}
+
+/* Navigation hover/active - Light Blue */
+.main-navigation .main-nav ul li:not([class*="current-menu-"]):hover > a,
+.main-navigation .main-nav ul li:not([class*="current-menu-"]):focus > a,
+.main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"]) > a,
+.main-navigation .main-nav ul li[class*="current-menu-"] > a,
+.main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover > a,
+.main-navigation .main-nav ul ul li[class*="current-menu-"] > a,
+.navigation-search input[type="search"]:active,
+.navigation-search input[type="search"]:focus {
+  background-color: #00A0DC !important;
+}
+
+/* Title underline accent */
+.tit-green::after,
+.tit-green-center::after {
+  background: rgba(0, 160, 220, 0.83) !important;
+}
+
+
