@@ -1,1 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?> <svg xmlns="http://www.w3.org/2000/svg" width="243" height="243" viewBox="0 0 243 243" fill="none"><path d="M242.5 242.5L0 0H242.5V242.5Z" fill="#001a36"></path></svg> 
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="243" height="243" viewBox="0 0 243 243" fill="none">
+  <!-- intentionally blank: removes the top-right corner triangle decoration -->
+  <rect width="243" height="243" fill="none"/>
+</svg>

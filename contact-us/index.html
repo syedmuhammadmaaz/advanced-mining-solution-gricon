@@ -387,6 +387,9 @@ div.sub-top-title::before {
   background-color: #707578;
   margin: 10px 3px;
 }
+.vc_custom_heading.tit-gray {
+  font-family: "Pastel Heart", "PastelHeart", cursive;
+}
 .tit-white::after {
     content: "";
     display: block;
@@ -629,7 +632,7 @@ ul.top-info li i {
   text-transform: uppercase;
 }
 #footer-widgets {
-  background: linear-gradient(to right, #00A0DC, #00A0DC) !important;
+  background: linear-gradient(to right, #007DB6, #00A0DC) !important;
 
 }
 ul.footer-socials li {
@@ -830,24 +833,26 @@ div#gform_confirmation_message_2 {
     margin-top: -51px;
   }
 
-/* Hero Banner - Replace dark blue overlay with #00A0DC */
+/* Hero Banner - Use inner banner SVG overlay */
 div.sub-top-title::before {
-  background: linear-gradient(to right, #00A0DC 0%, #00A0DC 50%, rgba(0,160,220,0) 100%) !important;
-  background-image: none !important;
+  background-image: url(../wp-content/uploads/2021/04/inner-bg-green.svg) !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: left top !important;
 }
-/* Footer and About Section Background Gradient Override */
+/* Footer and About Section Background Gradient Override - #007DB6 to #00A0DC */
 .footer-widgets {
-  background: linear-gradient(to right, #00A0DC, #00A0DC) !important;
+  background: linear-gradient(to right, #007DB6, #00A0DC) !important;
 }
 .site-footer {
-  background: linear-gradient(to right, #00A0DC, #00A0DC) !important;
+  background: linear-gradient(to right, #007DB6, #00A0DC) !important;
 }
 /* Override any green backgrounds in about sections */
 [class*="about"] [style*="background-color: #064928"],
 [class*="about"] [style*="background-color:#064928"],
 .vc_row[style*="background-color: #064928"],
 .vc_row[style*="background-color:#064928"] {
-  background: linear-gradient(to right, #00A0DC, #00A0DC) !important;
+  background: linear-gradient(to right, #007DB6, #00A0DC) !important;
 }
 </style>
 <!-- end Simple Custom CSS and JS -->
@@ -925,7 +930,7 @@ nav#site-navigation #primary-menu .menu-item.current_page_item > a,
 .footer-widgets,
 .inside-footer-widgets,
 .site-footer .grid-container {
-  background: linear-gradient(to right, #00A0DC, #00A0DC) !important;
+  background: linear-gradient(to right, #007DB6, #00A0DC) !important;
 
 }
 </style>

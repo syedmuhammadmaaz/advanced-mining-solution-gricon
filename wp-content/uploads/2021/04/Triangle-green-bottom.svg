@@ -1,1 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?> <svg xmlns="http://www.w3.org/2000/svg" width="147" height="148" viewBox="0 0 147 148" fill="none"><path d="M147 148L-6.46929e-06 0L0 148L147 148Z" fill="#001a36"></path></svg> 
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="147" height="148" viewBox="0 0 147 148" fill="none">
+  <defs>
+    <linearGradient id="bannerGradient" x1="0" y1="0" x2="147" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#007DB6"/>
+      <stop offset="50%" stop-color="#00A0DC"/>
+      <stop offset="100%" stop-color="#00A0DC" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <path d="M147 148L-6.46929e-06 0L0 148L147 148Z" fill="url(#bannerGradient)"/>
+</svg> 
